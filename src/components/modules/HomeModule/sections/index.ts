@@ -1,2 +1,2 @@
 export * from "./ProfileSection";
-export * from "./IntroductionSection";
+export * from "./MotivationSection";
