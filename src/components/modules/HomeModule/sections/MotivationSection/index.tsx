@@ -29,7 +29,7 @@ function Card({ text }: Props) {
       viewport={{ once: true, amount: 0.8 }}
     >
       <motion.div
-        className="flex items-center justify-center h-[430px] w-[300px] md:w-[600px] text-xl md:text-3xl bg-white text-black shadow-card rounded-3xl text-center"
+        className="flex items-center justify-center h-[430px] w-[300px] sm:w-[500px] md:w-[600px] text-xl sm:text-2xl md:text-3xl bg-white text-black shadow-card rounded-3xl text-center"
         variants={cardVariants}
       >
         {text}
