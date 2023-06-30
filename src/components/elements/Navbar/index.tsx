@@ -10,7 +10,11 @@ export const Navbar = () => {
       <Link href="#projects" className="font-medium text-xl">
         projects
       </Link>
-      <Link href="#blogs" className="font-medium text-xl">
+      <Link
+        href="https://blog.aglib.xyz"
+        target="_blank"
+        className="font-medium text-xl"
+      >
         blogs
       </Link>
     </div>

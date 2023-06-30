@@ -17,7 +17,10 @@ export const ProgrammingSection = () => {
       <div className="flex items-center justify-center flex-wrap gap-4">
         {INTERESTS.map((interest, index) => {
           return (
-            <div key={index} className="bg-white p-10 rounded-2xl text-black">
+            <div
+              key={index}
+              className="bg-white p-10 rounded-2xl text-black hover:scale-105 hover:font-semibold transform duration-75 ease-in"
+            >
               <span className="text-xl">{interest}</span>
             </div>
           );
@@ -25,7 +28,8 @@ export const ProgrammingSection = () => {
       </div>
 
       <span className="text-xl">
-        Speaking of programming 👀, I like to use:
+        Speaking of programming 👀, here is what I have been doing on that
+        matter:
       </span>
     </section>
   );
