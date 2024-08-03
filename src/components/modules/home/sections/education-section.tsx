@@ -37,7 +37,7 @@ export const EducationSection = () => {
           />
           <div className="flex flex-col absolute text-black top-6 left-8">
             <span className="text-xl font-bold">University of Indonesia</span>
-            <span>Computer Science • Jul '21 - Present</span>
+            <span>Computer Science • Jul &apos;21 - Present</span>
             <span className="italic">Source of picture: Myself 😁</span>
           </div>
         </motion.div>
@@ -57,7 +57,9 @@ export const EducationSection = () => {
             <span className="text-xl font-bold">
               University of Pennsylvania
             </span>
-            <span>International Guest Student Program • Aug '24 - Present</span>
+            <span>
+              International Guest Student Program • Aug &apos;24 - Present
+            </span>
             <Link
               className="underline italic"
               target="_blank"
