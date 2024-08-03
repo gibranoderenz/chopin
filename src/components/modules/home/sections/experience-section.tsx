@@ -41,7 +41,7 @@ export const ExperienceSection = () => {
     <div className="min-h-screen">
       <h2 className="text-4xl font-bold text-center py-8">Experience</h2>
       <div
-        style={{ height: `calc(100vh * ${EXPERIENCES.length})` }}
+        style={{ height: `calc(100vh * ${EXPERIENCES.length} + 100vh)` }}
         ref={targetRef}
       >
         {EXPERIENCES.map((experience, index) => {
