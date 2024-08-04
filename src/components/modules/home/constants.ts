@@ -66,7 +66,7 @@ export const EXPERIENCES: ExperienceCardProps[] = [
   {
     id: 4,
     place: "Career Talk UI",
-    title: "Frontend Engineer",
+    title: "Frontend Developer",
     jobDescriptions: [
       "Worked on the frontend pages of the Career Talk UI 2024 website",
     ],
