@@ -4,7 +4,6 @@ import {
   BiLogoAws,
   BiLogoDjango,
   BiLogoDocker,
-  BiLogoGoLang,
   BiLogoJava,
   BiLogoPostgresql,
   BiLogoPython,
@@ -44,7 +43,6 @@ export const StackSection = () => {
               <BiLogoPython size={64} />
               <BiLogoJava size={64} />
               <TbBrandKotlin size={64} />
-              <BiLogoGoLang size={64} />
             </div>
           </div>
           <div className="bg-red-600 w-[85vw] md:w-[35vw] h-[40vh] rounded-3xl z-[2] p-6 flex flex-col gap-2">
