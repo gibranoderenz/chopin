@@ -24,8 +24,7 @@ export const EXPERIENCES: ExperienceCardProps[] = [
     place: "HubbedIn",
     title: "Software Engineer Intern",
     jobDescriptions: [
-      "Worked on the frontend pages on HubbedIn (jobs discovery service), HubbedIn ATS (internal tool), and Hubbedx (shopping and influencer service), coordinating with the UI/UX and backend department",
-      "Created Chrome extension for internal use to better integrate LinkedIn and MyCareersFuture Singapore with HubbedIn ATS",
+      "Worked on the frontend pages on HubbedIn (jobs discovery service) and HubbedIn internal tools, coordinating with the UI/UX and backend department",
       "Resolved bugs on HubbedIn's services",
     ],
     period: "Jul '23 - Jan '24",
