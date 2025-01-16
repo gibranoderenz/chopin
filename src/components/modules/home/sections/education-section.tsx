@@ -58,7 +58,7 @@ export const EducationSection = () => {
               University of Pennsylvania
             </span>
             <span>
-              International Guest Student Program • Aug &apos;24 - Present
+              International Guest Student Program • Aug &apos;24 - Dec &apos;24
             </span>
             <Link
               className="underline italic"
