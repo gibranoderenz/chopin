@@ -9,6 +9,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = (props) => {
     borderRadius,
     backgroundColor,
     color,
+    borderColor,
     place,
     title,
     period,
@@ -25,6 +26,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = (props) => {
         borderRadius,
         backgroundColor,
         color,
+        border: `2.5px solid ${borderColor}`
       }}
       className="h-screen sticky top-0 p-4 md:p-8"
     >

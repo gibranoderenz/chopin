@@ -17,7 +17,7 @@ import {
   SiNestjs,
   SiRedis,
 } from "react-icons/si";
-import { TbBrandKotlin, TbBrandNextjs } from "react-icons/tb";
+import { TbBrandKotlin, TbBrandReact } from "react-icons/tb";
 
 export const StackSection = () => {
   const targetRef = useRef<HTMLDivElement>(null);
@@ -48,7 +48,7 @@ export const StackSection = () => {
           <div className="bg-red-600 w-[85vw] md:w-[35vw] h-[40vh] rounded-3xl z-[2] p-6 flex flex-col gap-2">
             <span className="text-3xl font-bold">Frontend</span>
             <div className="flex h-full items-center justify-center gap-4 md:gap-6 flex-wrap">
-              <TbBrandNextjs size={64} />
+              <TbBrandReact size={64} />
             </div>
           </div>
           <div className="bg-orange-600 w-[85vw] md:w-[35vw] h-[40vh] rounded-3xl z-[2] p-6 flex flex-col gap-2">

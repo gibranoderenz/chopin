@@ -7,6 +7,7 @@ export interface ExperienceCardProps {
   borderRadius?: MotionValue<number>;
   backgroundColor: string;
   color: string;
+  borderColor: string
   place: string;
   title: string;
   period: string;

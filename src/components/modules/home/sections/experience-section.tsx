@@ -1,4 +1,4 @@
-import { useScroll, useTransform } from "framer-motion";
+import { MotionValue, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { EXPERIENCES } from "../constants";
 import { ExperienceCard } from "../elements";
@@ -9,33 +9,21 @@ export const ExperienceSection = () => {
     target: targetRef,
     offset: ["start start", "end end"],
   });
-  const scale = useTransform(scrollYProgress, [0, 0.2], [1, 0.7]);
-  const scale2 = useTransform(scrollYProgress, [0.2, 0.4], [1, 0.7]);
-  const scale3 = useTransform(scrollYProgress, [0.4, 0.6], [1, 0.7]);
-  const scale4 = useTransform(scrollYProgress, [0.6, 0.8], [1, 0.7]);
-  const scale5 = useTransform(scrollYProgress, [0.8, 1], [1, 0.7]);
 
-  const rotate = useTransform(scrollYProgress, [0, 0.2], [0, 2]);
-  const rotate2 = useTransform(scrollYProgress, [0.2, 0.4], [0, 2]);
-  const rotate3 = useTransform(scrollYProgress, [0.4, 0.6], [0, 2]);
-  const rotate4 = useTransform(scrollYProgress, [0.6, 0.8], [0, 2]);
-  const rotate5 = useTransform(scrollYProgress, [0.8, 1], [0, 2]);
+  const difference = 1 / EXPERIENCES.length
+  const scales: MotionValue<number>[] = []
+  const rotations: MotionValue<number>[] = []
+  const borderRadiuses: MotionValue<number>[] = []
 
-  const borderRadius = useTransform(scrollYProgress, [0, 0.2], [0, 40]);
-  const borderRadius2 = useTransform(scrollYProgress, [0.2, 0.4], [0, 40]);
-  const borderRadius3 = useTransform(scrollYProgress, [0.4, 0.6], [0, 40]);
-  const borderRadius4 = useTransform(scrollYProgress, [0.6, 0.8], [0, 40]);
-  const borderRadius5 = useTransform(scrollYProgress, [0.8, 1], [0, 40]);
-
-  const scales = [scale, scale2, scale3, scale4, scale5];
-  const rotations = [rotate, rotate2, rotate3, rotate4, rotate5];
-  const borderRadiuses = [
-    borderRadius,
-    borderRadius2,
-    borderRadius3,
-    borderRadius4,
-    borderRadius5,
-  ];
+  for (let i = 0; i < EXPERIENCES.length; i++) {
+    const range = [difference * i, difference * i + 1]
+    const scale = useTransform(scrollYProgress, range, [1, 0.4]);
+    const rotate = useTransform(scrollYProgress, range, [0, 2]);
+    const borderRadius = useTransform(scrollYProgress, range, [0, 120]);
+    scales.push(scale)
+    rotations.push(rotate)
+    borderRadiuses.push(borderRadius)
+  }
 
   return (
     <div className="min-h-screen">

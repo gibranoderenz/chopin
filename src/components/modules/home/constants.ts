@@ -16,8 +16,9 @@ export const EXPERIENCES: ExperienceCardProps[] = [
     period: "Mar '23 - Nov '23",
     mode: "Hybrid",
     type: "Seasonal",
-    backgroundColor: "#1A1B2F",
-    color: "#FFFFFF",
+    backgroundColor: "#FFFFFF",
+    color: "#000000",
+    borderColor: "#000000"
   },
   {
     id: 1,
@@ -30,8 +31,9 @@ export const EXPERIENCES: ExperienceCardProps[] = [
     period: "Jul '23 - Jan '24",
     mode: "Remote",
     type: "Internship",
-    backgroundColor: "#000000",
-    color: "#FFFFFF",
+    backgroundColor: "#FFFFFF",
+    color: "#000000",
+    borderColor: "#000000"
   },
   {
     id: 2,
@@ -44,8 +46,9 @@ export const EXPERIENCES: ExperienceCardProps[] = [
     period: "Jan '24 - Jun '24",
     mode: "Hybrid",
     type: "Part-time",
-    backgroundColor: "#282627",
-    color: "#FFFFFF",
+    backgroundColor: "#FFFFFF",
+    color: "#000000",
+    borderColor: "#000000"
   },
   {
     id: 3,
@@ -59,8 +62,9 @@ export const EXPERIENCES: ExperienceCardProps[] = [
     period: "Apr '24 - Jun '24",
     mode: "Remote",
     type: "Internship",
-    backgroundColor: "#37517E",
-    color: "#FFFFFF",
+    backgroundColor: "#FFFFFF",
+    color: "#000000",
+    borderColor: "#000000"
   },
   {
     id: 4,
@@ -72,7 +76,22 @@ export const EXPERIENCES: ExperienceCardProps[] = [
     period: "May '24 - Aug '24",
     mode: "Remote",
     type: "Freelance",
-    backgroundColor: "#5E7153",
-    color: "#FFFFFF",
+    backgroundColor: "#FFFFFF",
+    color: "#000000",
+    borderColor: "#000000"
+  },
+  {
+    id: 5,
+    place: "Grab",
+    title: "Fullstack Engineer Intern",
+    jobDescriptions: [
+      "Worked on Grab internal tools; worked mostly on the frontend side",
+    ],
+    period: "Feb '25 - Jun '25",
+    mode: "Hybrid",
+    type: "Internship",
+    backgroundColor: "#FFFFFF",
+    color: "#000000",
+    borderColor: "#000000"
   },
 ];
