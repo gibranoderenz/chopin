@@ -9,15 +9,15 @@ export const ProjectSection = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 0.25], ["0%", "-150%"]);
-  const x2 = useTransform(scrollYProgress, [0.25, 0.5], ["0%", "-150%"]);
-  const x3 = useTransform(scrollYProgress, [0.5, 0.75], ["0%", "-150%"]);
-  const x4 = useTransform(scrollYProgress, [0.75, 1], ["0%", "-150%"]);
+  const difference = 1 / 3
+  const x = useTransform(scrollYProgress, [0, difference], ["0%", "-150%"]);
+  const x2 = useTransform(scrollYProgress, [difference, difference * 2], ["0%", "-150%"]);
+  const x3 = useTransform(scrollYProgress, [difference * 2, difference * 3], ["0%", "-150%"]);
 
   return (
     <div className="min-h-screen">
       <h2 className="text-4xl font-bold py-16 text-center">Projects</h2>
-      <div className="h-[500vh]" ref={targetRef}>
+      <div className="h-[400vh]" ref={targetRef}>
         <div className="h-screen flex items-center justify-center overflow-hidden sticky top-0">
           <motion.div
             style={{ x }}
@@ -87,30 +87,6 @@ export const ProjectSection = () => {
             >
               Link to the mobile demo (I worked on the mobile side of the
               project)
-            </Link>
-          </motion.div>
-        </div>
-
-        <div className="h-screen flex items-center justify-center overflow-hidden sticky top-0">
-          <motion.div
-            style={{ x: x4 }}
-            className="flex flex-col items-center gap-4 w-[90vw] md:w-[75vw] bg-[#5E7153] text-white rounded-3xl p-8"
-          >
-            <span className="text-2xl font-bold w-full">Career Talk UI</span>
-            <div className="relative w-full md:w-4/5 aspect-[1917/823]">
-              <Image
-                src={"/assets/career-talk-ui-cover.png"}
-                className="object-contain rounded-3xl"
-                alt="Blurred Basket app illustration"
-                fill
-              />
-            </div>
-            <Link
-              href={"https://www.careertalkui.com"}
-              target="_blank"
-              className="font-bold text-center text-md md:text-xl italic underline"
-            >
-              Link to the website
             </Link>
           </motion.div>
         </div>
