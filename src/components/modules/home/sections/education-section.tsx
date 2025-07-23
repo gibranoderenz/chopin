@@ -37,7 +37,7 @@ export const EducationSection = () => {
           />
           <div className="flex flex-col absolute text-black top-6 left-8">
             <span className="text-xl font-bold">University of Indonesia</span>
-            <span>Computer Science • Jul &apos;21 - Present</span>
+            <span>Computer Science • Jul &apos;21 - Jul &apos;25</span>
             <span className="italic">Source of picture: Myself 😁</span>
           </div>
         </motion.div>
