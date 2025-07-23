@@ -83,12 +83,12 @@ export const EXPERIENCES: ExperienceCardProps[] = [
   {
     id: 5,
     place: "Grab",
-    title: "Fullstack Engineer Intern",
+    title: "Intern [GIP], Fullstack Engineer",
     jobDescriptions: [
       "Worked on Grab internal tools; worked mostly on the frontend side",
     ],
     period: "Feb '25 - Jun '25",
-    mode: "Hybrid",
+    mode: "On-site",
     type: "Internship",
     backgroundColor: "#FFFFFF",
     color: "#000000",
